@@ -8,7 +8,7 @@
         <div class="row h-full">
             <div class="col-12 col-lg-8 offset-lg-2 align-self-center">
 
-                <h1 class="display-4 hidden-sm-down">BAHDCASTS</h1>
+                <h1 class="display-4 hidden-sm-down">Code Alchemy</h1>
                 <h1 class="hidden-md-up">THE BEST WEB DEVELOPMENT SCREENCASTS ON THE INTERNET</h1>
                 <br>
                 <p class="lead text-white fs-20 hidden-sm-down"><span class="fw-400">Bahdcasts</span> is an awesome web
@@ -35,7 +35,7 @@
 
 <section class="section bg-gray">
     <div class="container">
-        
+
         <header class="section-header">
             <small>lessons</small>
             <h2>Featured Screencasts</h2>

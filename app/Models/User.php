@@ -20,7 +20,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'username'
+        'username',
+        'confirm_token'
     ];
 
     /**
@@ -41,4 +42,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isConfirmed()
+    {
+        return $this->confirm_token == null; //returns true if confirmed(ie null in confirm_token)
+    }
+
+    public function confirm()
+    {
+        $this->confirm_token = null;
+        $this->save();
+    }
+
+    public function isAdmin()
+    {
+        return in_array($this->email, config('custom.administrators'));
+    }
 }
